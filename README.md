@@ -4,7 +4,12 @@
 
 <img src="./client/public/logos/arbitrum-logomark.svg" alt="ArbFlow Logo" width="120" height="120">
 
-ArbFlow is a revolutionary AI-powered DeFi arbitrage automation platform built on Arbitrum, leveraging advanced algorithms and real-time market analysis to democratize access to profitable arbitrage opportunities across decentralized exchanges.
+ArbFlow is a revolutionary AI-powered DeFi arbitrage automation platform built on Arbitrum, leveraging advanced algor| **Uniswap V3** | Active | $500M+ | 200+ |
+| **SushiSwap** | Active | $100M+ | 150+ |
+| **Balancer** | Active | $50M+ | 100+ |
+| **Curve** | Active | $200M+ | 50+ |
+| **Camelot** | Planned | $80M+ | 80+ |
+| **GMX** | Planned | $300M+ | 20+ |and real-time market analysis to democratize access to profitable arbitrage opportunities across decentralized exchanges.
 
 ## Smart DeFi Automation
 
@@ -407,20 +412,20 @@ npm run deploy:production
 
 ## Feature Implementation Status
 
-| Feature Category        | Progress | Status         |
-| ----------------------- | -------- | -------------- |
-| **Core Infrastructure** | 100%     | ✅ Complete    |
-| **AI Market Analysis**  | 95%      | ✅ Functional  |
-| **Arbitrage Detection** | 90%      | ✅ Operational |
-| **User Interface**      | 100%     | ✅ Complete    |
-| **Wallet Integration**  | 100%     | ✅ Complete    |
-| **Real-time Analytics** | 85%      | ✅ Active      |
-| **Risk Assessment**     | 80%      | 🔄 In Progress |
-| **Trading Automation**  | 75%      | 🔄 Development |
-| **Mobile Optimization** | 100%     | ✅ Responsive  |
-| **Multi-DEX Support**   | 70%      | 🔄 Expanding   |
-| **Gas Optimization**    | 85%      | ✅ Efficient   |
-| **Security Audits**     | 60%      | 🔄 Ongoing     |
+| Feature Category        | Progress | Status      |
+| ----------------------- | -------- | ----------- |
+| **Core Infrastructure** | 100%     | Complete    |
+| **AI Market Analysis**  | 95%      | Functional  |
+| **Arbitrage Detection** | 90%      | Operational |
+| **User Interface**      | 100%     | Complete    |
+| **Wallet Integration**  | 100%     | Complete    |
+| **Real-time Analytics** | 85%      | Active      |
+| **Risk Assessment**     | 80%      | In Progress |
+| **Trading Automation**  | 75%      | Development |
+| **Mobile Optimization** | 100%     | Responsive  |
+| **Multi-DEX Support**   | 70%      | Expanding   |
+| **Gas Optimization**    | 85%      | Efficient   |
+| **Security Audits**     | 60%      | Ongoing     |
 
 **Overall Progress**: 87% Complete
 
@@ -505,162 +510,3 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ArbFlow demonstrates that AI-powered DeFi automation is not just possible—it's the future of decentralized trading. By focusing on arbitrage opportunities as a gateway to broader DeFi strategies, we show how artificial intelligence can make sophisticated trading accessible to everyone while maintaining the security and decentralization that makes DeFi revolutionary.
 
 The future of DeFi trading lies in intelligent automation that empowers users rather than replacing them. ArbFlow is building that future on the **Arbitrum Ecosystem**, one arbitrage opportunity at a time.
-
-- **RainbowKit** for wallet connections
-- **Wagmi** for Web3 interactions
-
-### Backend
-
-- **Node.js** with Express
-- **TypeScript** with ES modules
-- **WebSocket** for real-time communication
-- **Drizzle ORM** with PostgreSQL
-
-### Blockchain
-
-- **Arbitrum** network
-- **Viem** for Ethereum interactions
-- **Multiple DEX integrations**
-
-## 🚀 Quick Start
-
-### Prerequisites
-
-- Node.js 18+
-- npm or yarn
-- MetaMask or compatible Web3 wallet
-
-### Installation
-
-1. **Clone the repository**
-
-   ```bash
-   git clone https://github.com/aniketsahu115/ArbFlow.git
-   cd ArbFlow
-   ```
-
-2. **Install dependencies**
-
-   ```bash
-   npm install
-   ```
-
-3. **Start the development server**
-
-   ```bash
-   npm run dev
-   ```
-
-4. **Open your browser**
-   Navigate to `http://localhost:5000`
-
-### Building for Production
-
-```bash
-npm run build
-npm start
-```
-
-## 🌐 Demo
-
-Experience ArbFlow live: [Live Demo](https://arbflow.vercel.app) _(Coming Soon)_
-
-## 📱 Features
-
-### 🎯 Core Features
-
-- **Arbitrage Detection**: Real-time scanning of DEX pairs for arbitrage opportunities
-- **AI Chat Interface**: Natural language interaction with our DeFi AI agent
-- **Wallet Integration**: Seamless connection with popular Web3 wallets
-- **Risk Analysis**: Comprehensive risk assessment for each opportunity
-- **Execution Planning**: Step-by-step guidance for arbitrage execution
-
-### 🔮 Advanced Features
-
-- **Multi-DEX Support**: Integration with Uniswap, SushiSwap, Balancer, and more
-- **Gas Optimization**: Smart gas fee calculation and optimization
-- **Slippage Protection**: Automatic slippage detection and protection
-- **Portfolio Tracking**: Monitor your arbitrage performance
-- **Historical Analysis**: Track past opportunities and performance
-
-## 🛣️ Roadmap
-
-### Phase 1: Foundation ✅
-
-- Basic arbitrage detection
-- Wallet connection
-- Simple UI/UX
-- Core AI chat functionality
-
-### Phase 2: Enhancement 🚧
-
-- Advanced AI algorithms
-- Multi-DEX integration
-- Risk assessment tools
-- Mobile responsiveness
-
-### Phase 3: Automation 🔄
-
-- Automated execution
-- Strategy templates
-- Portfolio management
-- Advanced analytics
-
-### Phase 4: Intelligence 🧠
-
-- Predictive analytics
-- Market sentiment analysis
-- Cross-chain opportunities
-- Community features
-
-### Phase 5: Scale 📈
-
-- Enterprise features
-- API access
-- White-label solutions
-- Institutional tools
-
-### Phase 6: Future 🚀
-
-- Agentic Swarm Intelligence
-- Proactive Intelligence Engine
-- Guardian Agent Protection
-- Cross-protocol automation
-
-## 🤝 Contributing
-
-We welcome contributions from the community! Please read our [Contributing Guidelines](CONTRIBUTING.md) before submitting pull requests.
-
-### Development Setup
-
-1. Fork the repository
-2. Create a feature branch: `git checkout -b feature/amazing-feature`
-3. Commit changes: `git commit -m 'Add amazing feature'`
-4. Push to branch: `git push origin feature/amazing-feature`
-5. Open a Pull Request
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 🔗 Links
-
-- **Website**: [arbflow.io](https://arbflow.io) _(Coming Soon)_
-- **Documentation**: [docs.arbflow.io](https://docs.arbflow.io) _(Coming Soon)_
-- **Discord**: [Join our community](https://discord.gg/arbitrum)
-- **Telegram**: [ArbFlow Channel](https://t.me/arbflow)
-- **Twitter**: [@ArbFlow](https://twitter.com/arbflow) _(Coming Soon)_
-
-## ⚠️ Disclaimer
-
-ArbFlow is experimental DeFi software. Use at your own risk. Always do your own research before engaging in any financial activities. The developers are not responsible for any financial losses.
-
-## 🙏 Acknowledgments
-
-- Arbitrum team for the amazing L2 infrastructure
-- OpenZeppelin for smart contract standards
-- The entire DeFi community for innovation and inspiration
-
----
-
-**Built with ❤️ for the DeFi community**
