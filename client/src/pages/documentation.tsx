@@ -306,7 +306,7 @@ export default function Documentation() {
                     onClick={(e) => {
                       e.preventDefault();
                       const link = document.createElement("a");
-                      link.href = "/architecture.svg";
+                      link.href = "/redirect-architecture.svg";
                       link.target = "_blank";
                       link.rel = "noopener noreferrer";
                       document.body.appendChild(link);
@@ -334,7 +334,7 @@ export default function Documentation() {
                     onClick={(e) => {
                       e.preventDefault();
                       const link = document.createElement("a");
-                      link.href = "/architecture.png";
+                      link.href = "/redirect-architecture.png";
                       link.target = "_blank";
                       link.rel = "noopener noreferrer";
                       document.body.appendChild(link);
@@ -357,34 +357,6 @@ export default function Documentation() {
                       />
                     </svg>
                     View Architecture (PNG)
-                  </Button>
-                  <Button
-                    onClick={(e) => {
-                      e.preventDefault();
-                      const link = document.createElement("a");
-                      link.href = "/architecture.svg";
-                      link.download = "arbflow-architecture.svg";
-                      link.style.display = "none";
-                      document.body.appendChild(link);
-                      link.click();
-                      document.body.removeChild(link);
-                    }}
-                    className="bg-purple-500 hover:bg-purple-600 transition-all transform hover:scale-105"
-                  >
-                    <svg
-                      className="w-4 h-4 mr-2"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
-                      />
-                    </svg>
-                    Download SVG
                   </Button>
                   <Button
                     onClick={(e) => {
@@ -417,7 +389,7 @@ export default function Documentation() {
                 </div>
                 <p className="text-xs text-muted-foreground mt-3">
                   View the architecture diagram in high resolution or download
-                  it for offline reference
+                  PNG for offline reference
                 </p>
               </div>
             </div>
