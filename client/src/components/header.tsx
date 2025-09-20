@@ -64,19 +64,12 @@ export default function Header() {
               <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-yellow-400 transition-all duration-200 ease-in-out group-hover:w-full"></span>
             </div>
           </Link>
-          <a
-            href="#how-it-works"
-            className="relative text-muted-foreground hover:text-foreground transition-all duration-200 ease-in-out group text-sm"
-            onClick={(e) => {
-              e.preventDefault();
-              document
-                .getElementById("how-it-works")
-                ?.scrollIntoView({ behavior: "smooth" });
-            }}
-          >
-            Support
-            <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-yellow-400 transition-all duration-200 ease-in-out group-hover:w-full"></span>
-          </a>
+          <Link href="/support">
+            <a className="relative text-muted-foreground hover:text-foreground transition-all duration-200 ease-in-out group text-sm">
+              Support
+              <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-yellow-400 transition-all duration-200 ease-in-out group-hover:w-full"></span>
+            </a>
+          </Link>
         </nav>
 
         {/* Right side - Connect Wallet, Social Links, Mobile Menu */}
@@ -171,19 +164,16 @@ export default function Header() {
                   Community
                 </div>
               </Link>
-              <a
-                href="#how-it-works"
-                className="block text-muted-foreground hover:text-foreground transition-colors py-2"
-                onClick={(e) => {
-                  e.preventDefault();
-                  document
-                    .getElementById("how-it-works")
-                    ?.scrollIntoView({ behavior: "smooth" });
-                  closeMobileMenu();
-                }}
-              >
-                Support
-              </a>
+              <Link href="/support">
+                <a
+                  className="block text-muted-foreground hover:text-foreground transition-colors py-2"
+                  onClick={(e) => {
+                    closeMobileMenu();
+                  }}
+                >
+                  Support
+                </a>
+              </Link>
             </nav>
 
             {/* Mobile Social Links */}
