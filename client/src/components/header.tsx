@@ -46,19 +46,12 @@ export default function Header() {
               <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-yellow-400 transition-all duration-200 ease-in-out group-hover:w-full"></span>
             </div>
           </Link>
-          <a
-            href="#roadmap"
-            className="relative text-muted-foreground hover:text-foreground transition-all duration-200 ease-in-out group"
-            onClick={(e) => {
-              e.preventDefault();
-              document
-                .getElementById("roadmap")
-                ?.scrollIntoView({ behavior: "smooth" });
-            }}
-          >
-            Community
-            <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-yellow-400 transition-all duration-200 ease-in-out group-hover:w-full"></span>
-          </a>
+          <Link to="/community">
+            <div className="relative text-muted-foreground hover:text-foreground transition-all duration-200 ease-in-out group cursor-pointer">
+              Community
+              <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-yellow-400 transition-all duration-200 ease-in-out group-hover:w-full"></span>
+            </div>
+          </Link>
           <a
             href="#how-it-works"
             className="relative text-muted-foreground hover:text-foreground transition-all duration-200 ease-in-out group"

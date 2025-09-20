@@ -11,6 +11,7 @@ import Landing from "@/pages/landing";
 import App from "@/pages/app";
 import Documentation from "@/pages/documentation";
 import FAQ from "@/pages/faq";
+import Community from "@/pages/community";
 import NotFound from "@/pages/not-found";
 
 // Import RainbowKit styles
@@ -23,6 +24,7 @@ function Router() {
       <Route path="/app" component={App} />
       <Route path="/documentation" component={Documentation} />
       <Route path="/faq" component={FAQ} />
+      <Route path="/community" component={Community} />
       <Route component={NotFound} />
     </Switch>
   );
