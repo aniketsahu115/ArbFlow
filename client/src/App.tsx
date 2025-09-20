@@ -10,6 +10,7 @@ import { arbflowTheme } from "./lib/rainbowkit-theme";
 import Landing from "@/pages/landing";
 import App from "@/pages/app";
 import Documentation from "@/pages/documentation";
+import FAQ from "@/pages/faq";
 import NotFound from "@/pages/not-found";
 
 // Import RainbowKit styles
@@ -21,6 +22,7 @@ function Router() {
       <Route path="/" component={Landing} />
       <Route path="/app" component={App} />
       <Route path="/documentation" component={Documentation} />
+      <Route path="/faq" component={FAQ} />
       <Route component={NotFound} />
     </Switch>
   );
