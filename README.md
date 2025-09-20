@@ -2,7 +2,7 @@
 
 <div align="center">
 
-<img src="./final-arbflow-logo.png" alt="ArbFlow Logo" width="120" height="120">
+<img src="./client/public/logos/arbitrum-logomark.svg" alt="ArbFlow Logo" width="120" height="120">
 
 ArbFlow is a revolutionary AI-powered DeFi arbitrage automation platform built on Arbitrum, leveraging advanced algorithms and real-time market analysis to democratize access to profitable arbitrage opportunities across decentralized exchanges.
 
