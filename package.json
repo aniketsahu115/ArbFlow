@@ -1,8 +1,27 @@
 {
-  "name": "rest-express",
+  "name": "arbflow",
   "version": "1.0.0",
+  "description": "Advanced AI-powered DeFi arbitrage automation platform on Arbitrum",
   "type": "module",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aniketsahu115/ArbFlow.git"
+  },
+  "homepage": "https://github.com/aniketsahu115/ArbFlow#readme",
+  "bugs": {
+    "url": "https://github.com/aniketsahu115/ArbFlow/issues"
+  },
+  "keywords": [
+    "defi",
+    "arbitrage",
+    "arbitrum",
+    "web3",
+    "ethereum",
+    "dex",
+    "automation",
+    "ai"
+  ],
   "scripts": {
     "dev": "set NODE_ENV=development && tsx server/index.ts",
     "build": "vite build && esbuild server/index.ts --platform=node --packages=external --bundle --format=esm --outdir=dist",

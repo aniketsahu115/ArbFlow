@@ -61,7 +61,9 @@ export default function Footer() {
                 Discord
               </a>
               <a
-                href="#"
+                href="https://github.com/aniketsahu115/ArbFlow"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="block text-muted-foreground hover:text-foreground transition-colors"
               >
                 GitHub
