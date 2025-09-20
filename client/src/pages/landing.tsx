@@ -922,22 +922,136 @@ export default function Landing() {
               </div>
               <div className="flex-1">
                 <h3 className="font-display text-xl font-semibold mb-2">
-                  Phase 3: Proactive Intelligence
+                  Phase 3: Enhanced Proactive Intelligence
                 </h3>
                 <p className="text-body text-muted-foreground mb-4">
-                  The agent offers proactive suggestions: impermanent loss
-                  warnings, yield optimization opportunities, and portfolio
-                  rebalancing recommendations.
+                  Advanced machine learning models for predictive analytics,
+                  yield forecasting, and impermanent loss prediction. Shift from
+                  reactive execution to proactive DeFi strategy optimization.
                 </p>
                 <div className="flex flex-wrap gap-2">
                   <span className="px-3 py-1 bg-purple-500/20 text-purple-400 rounded-full text-sm">
-                    IL Warnings
+                    ML Yield Forecasting
+                  </span>
+                  <span className="px-3 py-1 bg-purple-500/20 text-purple-400 rounded-full text-sm">
+                    IL Prediction & Mitigation
+                  </span>
+                  <span className="px-3 py-1 bg-purple-500/20 text-purple-400 rounded-full text-sm">
+                    Predictive Analytics
                   </span>
                   <span className="px-3 py-1 bg-purple-500/20 text-purple-400 rounded-full text-sm">
                     Auto-Optimization
                   </span>
-                  <span className="px-3 py-1 bg-purple-500/20 text-purple-400 rounded-full text-sm">
-                    Portfolio Rebalancing
+                </div>
+              </div>
+            </div>
+
+            {/* Phase 4 */}
+            <div className="flex items-start space-x-6">
+              <div className="flex-shrink-0">
+                <div className="w-12 h-12 bg-orange-500 rounded-xl flex items-center justify-center">
+                  <span className="text-white font-bold">4</span>
+                </div>
+              </div>
+              <div className="flex-1">
+                <h3 className="font-display text-xl font-semibold mb-2">
+                  Phase 4: Guardian Agent Security
+                </h3>
+                <p className="text-body text-muted-foreground mb-4">
+                  AI-driven security layer with real-time risk assessment of
+                  DeFi protocols. Automated due diligence before capital
+                  deployment, building trust through verifiable security
+                  analysis.
+                </p>
+                <div className="flex flex-wrap gap-2">
+                  <span className="px-3 py-1 bg-orange-500/20 text-orange-400 rounded-full text-sm">
+                    Real-time Risk Assessment
+                  </span>
+                  <span className="px-3 py-1 bg-orange-500/20 text-orange-400 rounded-full text-sm">
+                    Automated Due Diligence
+                  </span>
+                  <span className="px-3 py-1 bg-orange-500/20 text-orange-400 rounded-full text-sm">
+                    Protocol Security Scoring
+                  </span>
+                  <span className="px-3 py-1 bg-orange-500/20 text-orange-400 rounded-full text-sm">
+                    Trust Verification
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            {/* Phase 5 */}
+            <div className="flex items-start space-x-6">
+              <div className="flex-shrink-0">
+                <div className="w-12 h-12 bg-cyan-500 rounded-xl flex items-center justify-center">
+                  <span className="text-white font-bold">5</span>
+                </div>
+              </div>
+              <div className="flex-1">
+                <h3 className="font-display text-xl font-semibold mb-2">
+                  Phase 5: Agentic Swarm Framework
+                </h3>
+                <p className="text-body text-muted-foreground mb-4">
+                  Multi-agent coordination system with specialized,
+                  collaborating agents. Solves DeFi fragmentation by enabling
+                  complex, multi-step financial strategies across different
+                  protocols and chains.
+                </p>
+                <div className="flex flex-wrap gap-2">
+                  <span className="px-3 py-1 bg-cyan-500/20 text-cyan-400 rounded-full text-sm">
+                    Multi-Agent Coordination
+                  </span>
+                  <span className="px-3 py-1 bg-cyan-500/20 text-cyan-400 rounded-full text-sm">
+                    Cross-Protocol Strategies
+                  </span>
+                  <span className="px-3 py-1 bg-cyan-500/20 text-cyan-400 rounded-full text-sm">
+                    Chain Abstraction
+                  </span>
+                  <span className="px-3 py-1 bg-cyan-500/20 text-cyan-400 rounded-full text-sm">
+                    Specialized Agents
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            {/* Phase 6 */}
+            <div className="flex items-start space-x-6">
+              <div className="flex-shrink-0">
+                <div className="w-12 h-12 bg-gradient-to-r from-blue-500 to-purple-600 rounded-xl flex items-center justify-center">
+                  <svg
+                    className="w-6 h-6 text-white"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M13 10V3L4 14h7v7l9-11h-7z"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <div className="flex-1">
+                <h3 className="font-display text-xl font-semibold mb-2">
+                  Phase 6: Sovereign AI DeFi
+                </h3>
+                <p className="text-body text-muted-foreground mb-4">
+                  Full convergence of all systems into a unified, sovereign DeFi
+                  intelligence. Complete automation of complex financial
+                  strategies with human-level reasoning and cross-chain
+                  execution.
+                </p>
+                <div className="flex flex-wrap gap-2">
+                  <span className="px-3 py-1 bg-gradient-to-r from-blue-500/20 to-purple-600/20 text-blue-400 rounded-full text-sm">
+                    Unified AI Intelligence
+                  </span>
+                  <span className="px-3 py-1 bg-gradient-to-r from-blue-500/20 to-purple-600/20 text-purple-400 rounded-full text-sm">
+                    Autonomous Strategies
+                  </span>
+                  <span className="px-3 py-1 bg-gradient-to-r from-blue-500/20 to-purple-600/20 text-blue-400 rounded-full text-sm">
+                    Human-Level Reasoning
                   </span>
                 </div>
               </div>
