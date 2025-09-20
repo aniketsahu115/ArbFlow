@@ -5,8 +5,8 @@ export const arbflowTheme: Theme = {
     modalOverlay: "blur(4px)",
   },
   colors: {
-    accentColor: "#3B82F6", // Blue-500
-    accentColorForeground: "#FFFFFF",
+    accentColor: "#F59E0B", // Yellow-500 - ArbFlow primary color
+    accentColorForeground: "#000000", // Black text on yellow background
     actionButtonBorder: "rgba(255, 255, 255, 0.04)",
     actionButtonBorderMobile: "rgba(255, 255, 255, 0.06)",
     actionButtonSecondaryBackground: "rgba(255, 255, 255, 0.08)",
@@ -35,7 +35,7 @@ export const arbflowTheme: Theme = {
     profileAction: "rgba(255, 255, 255, 0.1)",
     profileActionHover: "rgba(255, 255, 255, 0.2)",
     profileForeground: "#1C1E24",
-    selectedOptionBorder: "rgba(59, 130, 246, 0.3)",
+    selectedOptionBorder: "rgba(245, 158, 11, 0.3)", // Yellow border instead of blue
     standby: "#F59E0B",
   },
   fonts: {
@@ -49,7 +49,7 @@ export const arbflowTheme: Theme = {
     modalMobile: "16px",
   },
   shadows: {
-    connectButton: "0 8px 32px rgba(59, 130, 246, 0.32)",
+    connectButton: "0 8px 32px rgba(245, 158, 11, 0.32)", // Yellow shadow instead of blue
     dialog: "0 8px 32px rgba(0, 0, 0, 0.32)",
     profileDetailsAction: "0 2px 6px rgba(0, 0, 0, 0.06)",
     selectedOption: "0 2px 6px rgba(0, 0, 0, 0.06)",
