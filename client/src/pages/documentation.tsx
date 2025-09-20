@@ -279,8 +279,15 @@ export default function Documentation() {
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <Button
-                    onClick={() => {
-                      window.open("/redirect-architecture.svg", "_blank");
+                    onClick={(e) => {
+                      e.preventDefault();
+                      const link = document.createElement("a");
+                      link.href = "/architecture.svg";
+                      link.target = "_blank";
+                      link.rel = "noopener noreferrer";
+                      document.body.appendChild(link);
+                      link.click();
+                      document.body.removeChild(link);
                     }}
                     className="bg-blue-500 hover:bg-blue-600 transition-all transform hover:scale-105"
                   >
@@ -300,8 +307,15 @@ export default function Documentation() {
                     View Architecture (SVG)
                   </Button>
                   <Button
-                    onClick={() => {
-                      window.open("/redirect-architecture.png", "_blank");
+                    onClick={(e) => {
+                      e.preventDefault();
+                      const link = document.createElement("a");
+                      link.href = "/architecture.png";
+                      link.target = "_blank";
+                      link.rel = "noopener noreferrer";
+                      document.body.appendChild(link);
+                      link.click();
+                      document.body.removeChild(link);
                     }}
                     className="bg-green-500 hover:bg-green-600 transition-all transform hover:scale-105"
                   >
@@ -321,10 +335,12 @@ export default function Documentation() {
                     View Architecture (PNG)
                   </Button>
                   <Button
-                    onClick={() => {
+                    onClick={(e) => {
+                      e.preventDefault();
                       const link = document.createElement("a");
-                      link.href = "/redirect-architecture.svg";
-                      link.download = "arbflow-redirect-architecture.svg";
+                      link.href = "/architecture.svg";
+                      link.download = "arbflow-architecture.svg";
+                      link.style.display = "none";
                       document.body.appendChild(link);
                       link.click();
                       document.body.removeChild(link);
@@ -346,10 +362,38 @@ export default function Documentation() {
                     </svg>
                     Download SVG
                   </Button>
+                  <Button
+                    onClick={(e) => {
+                      e.preventDefault();
+                      const link = document.createElement("a");
+                      link.href = "/architecture.png";
+                      link.download = "arbflow-architecture.png";
+                      link.style.display = "none";
+                      document.body.appendChild(link);
+                      link.click();
+                      document.body.removeChild(link);
+                    }}
+                    className="bg-amber-500 hover:bg-amber-600 transition-all transform hover:scale-105"
+                  >
+                    <svg
+                      className="w-4 h-4 mr-2"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+                      />
+                    </svg>
+                    Download PNG
+                  </Button>
                 </div>
                 <p className="text-xs text-muted-foreground mt-3">
-                  Click to open full-resolution architecture diagram in a new
-                  tab
+                  View the architecture diagram in high resolution or download
+                  it for offline reference
                 </p>
               </div>
             </div>
