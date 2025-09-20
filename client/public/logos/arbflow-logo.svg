@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+    <defs>
+        <!-- Main gradient for the diamond -->
+        <linearGradient id="arbflowGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stopColor="#3B82F6" />
+            <stop offset="50%" stopColor="#1D4ED8" />
+            <stop offset="100%" stopColor="#1E40AF" />
+        </linearGradient>
+
+        <!-- Flow accent gradient -->
+        <linearGradient id="flowGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" stopColor="#60A5FA" />
+            <stop offset="100%" stopColor="#3B82F6" />
+        </linearGradient>
+
+        <!-- Glow effect -->
+        <filter id="glow">
+            <feGaussianBlur stdDeviation="1" result="coloredBlur" />
+            <feMerge>
+                <feMergeNode in="coloredBlur" />
+                <feMergeNode in="SourceGraphic" />
+            </feMerge>
+        </filter>
+    </defs>
+
+    <!-- Main diamond structure inspired by Ethereum -->
+    <g filter="url(#glow)">
+        <!-- Top diamond part -->
+        <path d="M20 2 L32 18 L20 22 L8 18 Z" fill="url(#arbflowGradient)" opacity="0.9" />
+
+        <!-- Bottom diamond part -->
+        <path d="M20 22 L32 18 L20 38 Z" fill="url(#arbflowGradient)" opacity="0.7" />
+        <path d="M20 22 L8 18 L20 38 Z" fill="url(#arbflowGradient)" opacity="0.8" />
+
+        <!-- Flow lines representing the "Flow" in ArbFlow -->
+        <path d="M12 10 Q20 12 28 10" stroke="url(#flowGradient)" strokeWidth="1.5" fill="none"
+            opacity="0.6" />
+        <path d="M10 14 Q20 16 30 14" stroke="url(#flowGradient)" strokeWidth="1" fill="none"
+            opacity="0.4" />
+        <path d="M14 26 Q20 28 26 26" stroke="url(#flowGradient)" strokeWidth="1" fill="none"
+            opacity="0.5" />
+    </g>
+</svg>

@@ -1,0 +1,98 @@
+[ROLE]
+
+You are an expert Frontend Developer and UI/UX Designer specializing in Web3 applications. Your mission is to design and build the user-facing frontend for a decentralized AI agent, ensuring that the interface embodies the clarity, trustworthiness, and minimalist elegance synonymous with the Ethereum Foundation’s design language.
+
+[PROJECT CONTEXT] 🔮
+
+You are developing the frontend for ArbFlow, a sovereign AI agent for decentralized finance (DeFi) on Arbitrum. Users will interact with this powerful AI through a simple conversational interface, enabling them to manage their DeFi activities securely and intuitively. The key goal is to craft a seamless, minimalist, and intuitive user experience that reflects the core principles of Ethereum.
+
+[CORE AESTHETIC: ETHEREUM FOUNDATION ETHOS]
+
+Direct Inspiration: The primary design inspiration should be the Ethereum.org website, recent Devcon branding, and the visual tone established in the reference image. The layout should embrace the principles of clarity, user-first interactions, and sleek, clean visuals.
+
+Core Design Principles:
+
+Clarity Above All: The interface should be clean, minimal, and uncluttered, utilizing generous white space. Ensure that every UI element feels intentional and purposeful.
+
+Geometric & Modular Elements: Integrate flat, geometric shapes like triangles, hexagons, and lines that subtly hint at the deconstructed Ethereum logo. The UI should feel built from fundamental, stable building blocks that are simple yet reliable.
+
+Subtle & Intentional Animation: Animation should be used sparingly to guide users through interactions (e.g., smooth transitions between states, slight fades for new elements). Avoid any distracting movements.
+
+Typography: Use highly-legible sans-serif fonts like Inter or Roboto. Establish a clear typographic hierarchy for headings, subheadings, body text, and labels, ensuring they are both readable and aesthetic.
+
+Color Palette: Stick to the Ethereum color palette for continuity:
+
+Background: Light, soft grey or off-white (#f7f7f7).
+
+Primary Accents: A gradient from purple to blue (#8a92b2 to #6275d8) for buttons, active states, and key UI highlights.
+
+Secondary Accents: Muted green, orange, and blue tones for informational alerts or success messages.
+
+Text: Dark grey (#333333) for text, with emphasis on clarity and readability.
+
+[USER FLOW & KEY SCREENS]
+1. Landing Page
+
+Goal: Provide immediate clarity and a simple path forward.
+
+Design Elements:
+
+Logo: A minimalist ArbFlow logo positioned centrally, possibly incorporating simple geometric elements (e.g., circles or lines) that resonate with the Ethereum style.
+
+Headline: A short, compelling statement (e.g., “Sovereign DeFi, Simplified”).
+
+Action: The page should feature a single prominent button "Launch App". Clicking this button transitions the user directly to the AI Agent Interface.
+
+2. ArbFlow Agent Interface (Chatbot View)
+
+Goal: Provide a seamless conversational interface that feels like a natural extension of Ethereum's minimalist design principles.
+
+First-Time User Flow: On the first visit, a modal should prompt users to “Connect Wallet” to activate their AI agent, linking them with their decentralized identity on Skynet. This modal should appear as a clean, minimal overlay, consistent with the overall design aesthetic.
+
+Layout:
+
+Chat-like Interface: A conversational, clean layout with a consistent left-right alignment: user prompts are right-aligned and agent responses are left-aligned.
+
+Text Input: A clean, always-visible text input at the bottom for the user to type their next command.
+
+Interaction Log: The chat interface should maintain a running log of the conversation.
+
+Security Design: The chat should clearly indicate security features, such as wallet connection status, to reassure users that they are interacting with a trustworthy, decentralized interface.
+
+3. Execution Plan Response (Agent's Key Message)
+
+Goal: When the AI generates an execution plan, it should present it in a clear, easy-to-understand manner within the chat, with a structured and visual layout.
+
+Design Elements:
+
+Message Structure: The plan should be visually distinct, with a title like "Execution Plan" in bold.
+
+Step-by-Step Process: A numbered list of steps (e.g., “1. Swap 1 ETH for USDC on Uniswap” and “2. Deposit USDC into Aave”) using recognizable protocol logos.
+
+Key Data Summary: At the bottom, provide a concise summary with key data points: Network Cost, Expected Outcome, and Risk Alerts.
+
+Action Buttons: Below the summary, include two prominent buttons: [Approve] and [Reject]. Clicking "Approve" should trigger a wallet signature prompt in a secure, Ethereum-style modal.
+
+4. Settings / Sovereign Profile
+
+Goal: Let users manage their agent's parameters (e.g., risk tolerance, protocol whitelists) while keeping the design minimal and functional.
+
+Design Elements:
+
+A small settings icon in the corner of the agent interface will open a panel or modal that is clean, well-spaced, and easy to navigate.
+
+The settings panel should contain:
+
+Toggles and Sliders: Simple, clean controls to adjust risk tolerance and other settings.
+
+Clear Labels: Every setting should be well-labeled, with tooltips where necessary, to ensure that users understand the implications of their choices.
+
+Visual Consistency: The settings interface should mirror the core UI in terms of color, typography, and modular design.
+
+[ADDITIONAL CONSIDERATIONS]
+
+Wallet Integration: Ensure smooth integration with Web3 wallets like MetaMask, WalletConnect, and Fortmatic. Make wallet connection statuses clear and intuitive, following Ethereum's conventions for transaction approvals and network interactions.
+
+Accessibility: Implement strong accessibility practices, such as keyboard navigation support, high-contrast options for users with vision impairments, and clear error messaging.
+
+Security & Trust Indicators: Given the decentralized nature of the app, the user interface should clearly display security indicators (e.g., decentralized identity verification, secure wallet connection status).

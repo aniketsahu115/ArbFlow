@@ -1,0 +1,221 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500;600;700&family=Manrope:wght@300;400;500;600;700;800&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Smooth scrolling for navigation */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Add padding-top to sections for fixed header */
+section[id] {
+  scroll-margin-top: 80px;
+}
+
+:root {
+  --background: hsl(220 13% 9%);
+  --foreground: hsl(0 0% 98%);
+  --card: hsl(220 13% 9%);
+  --card-foreground: hsl(0 0% 98%);
+  --popover: hsl(220 13% 9%);
+  --popover-foreground: hsl(0 0% 98%);
+  --primary: hsl(217 92% 60%);
+  --primary-foreground: hsl(0 0% 98%);
+  --secondary: hsl(220 13% 15%);
+  --secondary-foreground: hsl(0 0% 98%);
+  --muted: hsl(220 13% 15%);
+  --muted-foreground: hsl(215 20% 65%);
+  --accent: hsl(220 13% 15%);
+  --accent-foreground: hsl(0 0% 98%);
+  --destructive: hsl(0 84% 60%);
+  --destructive-foreground: hsl(0 0% 98%);
+  --border: hsl(220 13% 18%);
+  --input: hsl(220 13% 18%);
+  --ring: hsl(217 92% 60%);
+  --chart-1: hsl(217 92% 60%);
+  --chart-2: hsl(159 100% 36%);
+  --chart-3: hsl(42 93% 56%);
+  --chart-4: hsl(147 79% 42%);
+  --chart-5: hsl(341 75% 51%);
+  --sidebar: hsl(220 13% 15%);
+  --sidebar-foreground: hsl(0 0% 98%);
+  --sidebar-primary: hsl(217 92% 60%);
+  --sidebar-primary-foreground: hsl(0 0% 98%);
+  --sidebar-accent: hsl(220 13% 18%);
+  --sidebar-accent-foreground: hsl(217 92% 60%);
+  --sidebar-border: hsl(220 13% 18%);
+  --sidebar-ring: hsl(217 92% 60%);
+  --font-sans: "Manrope", "Inter", system-ui, sans-serif;
+  --font-display: "Space Grotesk", "Inter", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", "SF Mono", Monaco, monospace;
+  --radius: 0.5rem;
+  --ethereum-gradient: linear-gradient(
+    135deg,
+    hsl(217 92% 60%) 0%,
+    hsl(244 65% 66%) 100%
+  );
+  --ethereum-gradient-start: hsl(217 92% 60%);
+  --ethereum-gradient-end: hsl(244 65% 66%);
+}
+
+.dark {
+  --background: hsl(0 0% 3.9%);
+  --foreground: hsl(0 0% 98%);
+  --card: hsl(0 0% 3.9%);
+  --card-foreground: hsl(0 0% 98%);
+  --popover: hsl(0 0% 3.9%);
+  --popover-foreground: hsl(0 0% 98%);
+  --primary: hsl(253 67% 57%);
+  --primary-foreground: hsl(0 0% 100%);
+  --secondary: hsl(0 0% 14.9%);
+  --secondary-foreground: hsl(0 0% 98%);
+  --muted: hsl(0 0% 14.9%);
+  --muted-foreground: hsl(0 0% 63.9%);
+  --accent: hsl(0 0% 14.9%);
+  --accent-foreground: hsl(0 0% 98%);
+  --destructive: hsl(0 84.2% 60.2%);
+  --destructive-foreground: hsl(0 0% 98%);
+  --border: hsl(0 0% 14.9%);
+  --input: hsl(0 0% 14.9%);
+  --ring: hsl(253 67% 57%);
+  --chart-1: hsl(220 70% 50%);
+  --chart-2: hsl(160 60% 45%);
+  --chart-3: hsl(30 80% 55%);
+  --chart-4: hsl(280 65% 60%);
+  --chart-5: hsl(340 75% 55%);
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    background: radial-gradient(
+        ellipse 80% 50% at 20% 0%,
+        rgba(59, 130, 246, 0.08),
+        transparent
+      ),
+      radial-gradient(
+        ellipse 80% 80% at 80% 50%,
+        rgba(139, 92, 246, 0.06),
+        transparent
+      ),
+      hsl(220 13% 9%);
+    min-height: 100vh;
+  }
+
+  html {
+    color-scheme: dark;
+  }
+}
+
+@layer components {
+  .ethereum-gradient {
+    background: var(--ethereum-gradient);
+  }
+
+  .geometric-shape {
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  }
+
+  .chat-bubble-user {
+    background: var(--ethereum-gradient);
+  }
+
+  .chat-bubble-ai {
+    background: var(--card);
+    border: 1px solid var(--border);
+  }
+
+  .protocol-logo {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+  }
+
+  .slider {
+    -webkit-appearance: none;
+    appearance: none;
+    background: var(--secondary);
+    outline: none;
+  }
+
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: var(--primary);
+    cursor: pointer;
+  }
+
+  .slider::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: var(--primary);
+    cursor: pointer;
+    border: none;
+  }
+}
+
+/* Rich Typography Classes for Professional DeFi UI */
+@layer components {
+  .font-display {
+    font-family: var(--font-display);
+    font-feature-settings: "ss01" 1, "ss02" 1;
+  }
+
+  .font-mono {
+    font-family: var(--font-mono);
+    font-variant-ligatures: none;
+  }
+
+  /* Professional DeFi Typography */
+  .text-hero {
+    @apply font-display text-6xl md:text-7xl font-bold tracking-tight;
+    background: linear-gradient(
+      135deg,
+      hsl(0 0% 100%) 0%,
+      hsl(217 92% 60%) 100%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .text-title {
+    @apply font-display text-3xl md:text-4xl font-semibold tracking-tight;
+  }
+
+  .text-subtitle {
+    @apply font-sans text-lg md:text-xl text-muted-foreground font-medium;
+  }
+
+  .text-body {
+    @apply font-sans text-base leading-relaxed;
+  }
+
+  .text-caption {
+    @apply font-sans text-sm text-muted-foreground;
+  }
+
+  .text-code {
+    @apply font-mono text-sm bg-muted px-1.5 py-0.5 rounded;
+  }
+
+  .text-gradient {
+    background: linear-gradient(
+      135deg,
+      hsl(217 92% 60%) 0%,
+      hsl(244 65% 66%) 100%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+}
