@@ -32,37 +32,47 @@ ArbFlow is a revolutionary DeFi AI-Agent platform built on Arbitrum
 
 ## Overview
 
-ArbFlow demonstrates the transformative potential of **AI-driven DeFi automation** by creating an intelligent, accessible platform. By leveraging advanced machine learning algorithms, real-time market analysis, and seamless blockchain integration, ArbFlow bridges traditional DeFi complexity with next-generation automated strategies.
+ArbFlow demonstrates the transformative potential of AI-driven DeFi automation by creating an intelligent, accessible platform. By leveraging advanced natural language processing, machine learning, real-time market analysis, and decentralized infrastructure, ArbFlow bridges DeFi complexity with user-sovereign automation.
 
-To democratize access to DeFi arbitrage opportunities globally by creating an intelligent, transparent, and efficient platform where users can leverage AI-powered strategies to maximize returns while maintaining full custody of their assets on the **Arbitrum Ecosystem**.
+The purpose is to democratize access to DeFi activities such as liquid staking, swaps, bridging, yield optimization, rebalancing, and token research. ArbFlow empowers users to interact with DeFi using simple NLP commands while maintaining verifiability, transparency, and full custody of their assets on the Arbitrum Ecosystem.
+
+## Integrations and Protocols -
+ArbFlow integrates with powerful decentralized infrastructure and liquidity protocols to ensure secure, efficient, and scalable automation across DeFi:
+
+- **Skynet Protocol** – Provides decentralized, verifiable, and censorship-resistant infrastructure for ArbFlow’s AI agents. This ensures computations and intent executions are transparent, trustless, and not dependent on centralized servers.
+- **Li.Fi Bridge & DEX Aggregation Protocol** – Powers cross-chain asset transfers with deep liquidity and optimal routing, enabling ArbFlow to execute user intents seamlessly across multiple ecosystems.
 
 ## Key Features
 
-### For Traders
+### For Users
 
-- **AI-Powered Opportunity Detection**: Advanced algorithms identify profitable arbitrage opportunities across multiple DEXs
-- **Real-time Market Analysis**: Continuous monitoring of price discrepancies and liquidity pools
-- **Non-custodial Trading**: Maintain full control of your funds throughout the entire process
-- **Risk Assessment Engine**: Comprehensive analysis of potential risks and rewards
+- **AI-Agent with NLP Interface**: Execute DeFi actions (stake, swap, yield, bridge) with natural language commands
+- **Non-custodial Execution**: Maintain full control of your funds throughout all processes
+- **Risk Assessment Engine**: Assess potential risks including impermanent loss, slippage, and market volatility
+- **Predictive Yield Optimization**: AI-driven forecasting for higher yield opportunities
 - **Natural Language Interface**: Chat with our AI agent using plain English commands
 - **Strategy Optimization**: AI-optimized execution paths for maximum profitability
+- **Intent Verification**: User-sovereign, verifiable AI agent ensures actions align with user approvals
+- **Portfolio Automation**: Automated rebalancing and strategy execution
 
 ### For DeFi Enthusiasts
 
 - **Educational Dashboard**: Learn about arbitrage strategies and market dynamics
 - **Portfolio Analytics**: Track performance and historical trading data
-- **Market Intelligence**: Access to real-time market insights and trends
-- **Community Features**: Connect with other traders and share strategies
-- **Mobile Optimization**: Trade on-the-go with responsive design
+- **Market Intelligence**: Access real-time token research, insights, and predictions
+- **Community Features**: Connect with other DeFi users and share strategies
+- **Mobile Optimization**: Manage DeFi activities on-the-go
 - **Multi-wallet Support**: Compatible with popular Web3 wallets
 
 ### Platform Features
 
 - **Cross-DEX Integration**: Support for major Arbitrum DEXs (Uniswap, SushiSwap, Balancer, etc.)
+- **Decentralized Infra**: Powered by Skynet Protocol for data hosting and verifiable AI
 - **Gas Optimization**: Smart gas fee management and MEV protection
 - **WebSocket Integration**: Real-time price feeds and instant notifications
 - **Advanced Analytics**: Comprehensive reporting and performance metrics
 - **Security First**: Audited smart contracts and secure wallet integration
+
 
 ## Architecture
 
@@ -95,39 +105,20 @@ sequenceDiagram
 
 ### Core Workflows
 
-1. **Opportunity Detection Flow**
+1. **DeFi Action Flow**
 
-   - Market Scanning → Price Analysis → Arbitrage Identification → Risk Assessment → Opportunity Notification
+  - NLP Command → Intent Parsing → Strategy Generation → Risk Assessment → Proposal Display → User Approval → Execution
 
-2. **Trade Execution Flow**
+2. **Portfolio Optimization Flow**
 
-   - Strategy Selection → Gas Estimation → Transaction Simulation → Execution → Settlement Tracking
+  - Strategy Selection → Predictive Yield Forecasting → Risk Mitigation → Execution → Settlement Tracking
 
 3. **AI Chat Flow**
    - User Query → Natural Language Processing → Market Data Retrieval → AI Response → Action Execution
 
-## Technology Stack
-
-### Frontend
-
-- **Framework**: React 18 + TypeScript + Vite
-- **UI Components**: shadcn/ui + Radix UI + Tailwind CSS
-- **Web3 Integration**: wagmi + RainbowKit + viem
-- **State Management**: TanStack Query + Zustand
-- **Charts & Visualization**: Recharts + Lucide React Icons
-- **Real-time Updates**: Socket.io Client
-
-### Backend
-
-- **Runtime**: Node.js + Express.js + TypeScript
-- **Database**: PostgreSQL + Redis + Drizzle ORM
-- **Real-time**: Socket.io for WebSocket connections
-- **API Design**: RESTful APIs + OpenAPI documentation
-- **Caching**: Redis for session and market data caching
-
 ### AI & Analytics
 
-- **AI Models**: Custom ML models + OpenAI integration
+- **AI Models**: Custom ML models + Skynet Protocol integration
 - **Market Analysis**: Real-time price feed processing
 - **Risk Assessment**: Multi-factor risk scoring algorithms
 - **Natural Language**: GPT-powered chat interface
@@ -135,33 +126,16 @@ sequenceDiagram
 
 ### Blockchain
 
-- **Network**: Arbitrum One (Mainnet) + Arbitrum Sepolia (Testnet)
+- **Network**: Arbitrum Orbit (Mainnet)
 - **DEX Integration**: Uniswap V3, SushiSwap, Balancer, Curve
 - **Wallet Support**: MetaMask, WalletConnect, Coinbase Wallet
 - **Transaction Management**: Gas optimization + MEV protection
-
-### DevOps & Infrastructure
-
-- **Build Tools**: Vite + ESBuild + TypeScript
-- **Testing**: Vitest + React Testing Library
-- **Linting**: ESLint + TypeScript ESLint + Prettier
-- **Deployment**: Vercel + Railway + Docker
-- **Monitoring**: Real-time error tracking + performance monitoring
-
-## Quick Start
-
-### Prerequisites
-
-- Node.js v18+ and npm/yarn
-- Git
-- MetaMask or compatible Web3 wallet
-- Arbitrum testnet ETH (for testing)
 
 ### 1. Clone and Setup
 
 ```bash
 # Clone the repository
-git clone https://github.com/aniketsahu115/ArbFlow.git
+git clone
 cd ArbFlow
 
 # Install dependencies
@@ -191,7 +165,7 @@ ARBITRUM_SEPOLIA_RPC_URL=https://sepolia-rollup.arbitrum.io/rpc
 
 # API Keys
 ALCHEMY_API_KEY=your_alchemy_api_key
-OPENAI_API_KEY=your_openai_api_key
+SKYNET_API_KEY=your_skynet_api_key
 COINGECKO_API_KEY=your_coingecko_api_key
 
 # Frontend Configuration
@@ -219,25 +193,16 @@ npm run dev
 
 ## Core Features
 
-### AI-Powered Market Analysis
+### AI-Powered Market & Yield Analysis
 
-ArbFlow's intelligent market analysis engine continuously monitors multiple data sources:
+ArbFlow's intelligent engine continuously monitors multiple data sources:
 
 - **Price Feeds**: Real-time price data from 10+ DEXs on Arbitrum
 - **Liquidity Analysis**: Pool depth and slippage calculations
+- **Yield Analysis**: Compare yields across lending and staking protocols
 - **Gas Optimization**: Dynamic gas fee estimation and MEV protection
 - **Risk Scoring**: Multi-factor risk assessment for each opportunity
-
-### Supported DEXs
-
-| DEX            | Integration | TVL    | Supported Pairs |
-| -------------- | ----------- | ------ | --------------- |
-| **Uniswap V3** | ✅ Active   | $500M+ | 200+            |
-| **SushiSwap**  | ✅ Active   | $100M+ | 150+            |
-| **Balancer**   | ✅ Active   | $50M+  | 100+            |
-| **Curve**      | ✅ Active   | $200M+ | 50+             |
-| **Camelot**    | 🔄 Planned  | $80M+  | 80+             |
-| **GMX**        | 🔄 Planned  | $300M+ | 20+             |
+- **Predictive Yield**: Forecast future yields using ML models
 
 ### API Endpoints
 
@@ -336,7 +301,7 @@ npm run deploy:production
 | **Wallet Integration**  | 100%     | Complete    |
 | **Real-time Analytics** | 85%      | Active      |
 | **Risk Assessment**     | 80%      | In Progress |
-| **Trading Automation**  | 75%      | Development |
+| **Yield Optimization**  | 75%      | Development |
 | **Mobile Optimization** | 100%     | Responsive  |
 | **Multi-DEX Support**   | 70%      | Expanding   |
 | **Gas Optimization**    | 85%      | Efficient   |
@@ -367,9 +332,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## Acknowledgments
 
 - **Arbitrum** for Layer 2 scaling solution and ecosystem support
-- **OpenAI** for advanced AI capabilities and natural language processing
+- **Skynet Protocol** for advanced AI capabilities and natural language processing
 - **Uniswap** and other DEX protocols for liquidity and trading infrastructure
-- **shadcn/ui** for beautiful and accessible UI components
 - **The DeFi Community** for continuous innovation and collaboration
 
 ---
@@ -378,17 +342,17 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ### Phase 1: Core Platform (Current)
 
-- AI-powered arbitrage detection
+- NLP-based DeFi automation
 - Multi-DEX integration
-- Real-time market analysis
-- Basic trading automation
+- Real-time market and yield analysis
+- Basic portfolio automation
 
 ### Phase 2: Advanced Automation (3-6 months)
 
 - Automated strategy execution
-- Advanced risk management
-- Cross-chain arbitrage opportunities
-- Professional trading tools
+- Advanced risk management including IL mitigation
+- Cross-chain bridging and multi-chain yield
+- Professional DeFi dashboards
 
 ### Phase 3: Ecosystem Expansion (6-12 months)
 
@@ -404,24 +368,5 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - Educational platform
 - Regulatory compliance tools
 
-## Measuring Success
-
-### Platform Metrics
-
-- **Trading Volume**: $10M+ processed monthly
-- **User Growth**: 5,000+ active traders
-- **Arbitrage Opportunities**: 100+ identified daily
-- **Success Rate**: 85%+ profitable trades
-
-### Innovation Metrics
-
-- **AI Accuracy**: 90%+ opportunity prediction rate
-- **Gas Efficiency**: 40% reduction in transaction costs
-- **Speed Advantage**: <2 second opportunity detection
-- **Risk Management**: 95% uptime with zero major losses
-
 ## Conclusion
-
-ArbFlow demonstrates that AI-powered DeFi automation is not just possible—it's the future of decentralized trading. By focusing on arbitrage opportunities as a gateway to broader DeFi strategies, we show how artificial intelligence can make sophisticated trading accessible to everyone while maintaining the security and decentralization that makes DeFi revolutionary.
-
-The future of DeFi trading lies in intelligent automation that empowers users rather than replacing them. ArbFlow is building that future on the **Arbitrum Ecosystem**, one arbitrage opportunity at a time.
+ArbFlow represents the next step in onchain finance where AI agents act as user-sovereign co-pilots, simplifying complex strategies and empowering intent-driven automation. By combining decentralized infrastructure via **Skynet Protocol**, seamless cross-chain execution through **Li.Fi Bridge, and efficient swaps with DEX aggregation**, ArbFlow delivers an all-in-one platform for staking, yield optimization, rebalancing, bridging, and more.
