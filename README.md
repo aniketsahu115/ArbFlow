@@ -75,97 +75,28 @@ To democratize access to DeFi arbitrage opportunities globally by creating an in
 
 ArbFlow follows a modern microservices architecture with clear separation of concerns across frontend, backend, AI services, and blockchain layers.
 
-```mermaid
-flowchart TD
-    %% Styling
-    classDef frontend fill:#42b883,color:#000,stroke:#42b883
-    classDef ai fill:#ff6b6b,color:#fff,stroke:#ff6b6b
-    classDef api fill:#60a5fa,color:#000,stroke:#60a5fa
-    classDef app fill:#f97316,color:#fff,stroke:#f97316
-    classDef db fill:#fbbf24,color:#000,stroke:#fbbf24
-    classDef bc fill:#8b5cf6,color:#fff,stroke:#8b5cf6
-    classDef external fill:#84cc16,color:#000,stroke:#84cc16
-
-    subgraph Frontend["Frontend Layer"]
-        direction TB
-        F1["React + Wagmi"]:::frontend
-        F2["RainbowKit UI"]:::frontend
-        F3["Chat Interface"]:::frontend
-        F4["Real-time Dashboard"]:::frontend
-    end
-
-    subgraph AI["AI Services"]
-        direction TB
-        A1["Market Analysis Engine"]:::ai
-        A2["Arbitrage Detection"]:::ai
-        A3["Risk Assessment"]:::ai
-        A4["Strategy Optimization"]:::ai
-    end
-
-    subgraph API["API Gateway"]
-        direction TB
-        G1["Express.js"]:::api
-        G2["WebSocket Server"]:::api
-        G3["Rate Limiting"]:::api
-    end
-
-    subgraph App["Application Services"]
-        direction TB
-        S1["Market Service"]:::app
-        S2["Trading Service"]:::app
-        S3["Analytics Service"]:::app
-        S4["User Service"]:::app
-    end
-
-    subgraph DB["Database Layer"]
-        direction TB
-        D1["PostgreSQL"]:::db
-        D2["Redis Cache"]:::db
-        D3["Time Series DB"]:::db
-    end
-
-    subgraph BC["Blockchain Layer"]
-        direction TB
-        B1["Arbitrum Network"]:::bc
-        B2["DEX Integrations"]:::bc
-        B3["Wallet Connectors"]:::bc
-    end
-
-    subgraph External["External APIs"]
-        direction TB
-        E1["Price Feeds"]:::external
-        E2["Gas Trackers"]:::external
-        E3["DEX APIs"]:::external
-    end
-
-    %% Connections
-    F1 --> G1
-    F2 --> G1
-    F3 --> A1
-    F4 --> G2
-
-    A1 --> S1
-    A2 --> S2
-    A3 --> S2
-    A4 --> S2
-
-    G1 --> S1
-    G1 --> S2
-    G1 --> S3
-    G1 --> S4
-
-    S1 --> D1
-    S2 --> D2
-    S3 --> D3
-    S4 --> D1
-
-    S1 --> E1
-    S2 --> B1
-    S2 --> B2
-
-    B1 --> B3
-    E1 --> E2
-    E2 --> E3
+```sequenceDiagram
+    participant U as User
+    participant F as Frontend
+    participant AI as AI Agent Core
+    participant S as Skynet
+    participant Arb as Arbitrum
+    
+    U->>+F: Enter command ("Swap 1 ETH...")
+    F->>+AI: Send command to Intent Engine
+    AI->>AI: Parse intent
+    AI->>+S: Query user preferences
+    S-->>-AI: Return preferences
+    AI->>+S: Fetch risk tolerance
+    S-->>-AI: Return risk settings
+    AI->>+AI: Simulate transaction
+    AI-->>-F: Display proposal
+    U->>+F: Approve transaction
+    F->>+Arb: Submit transaction
+    Arb->>-F: Confirm execution
+    F->>+S: Record history
+    S-->>-F: Confirm storage
+    F-->>-U: Show completion    
 ```
 
 ### Core Workflows
