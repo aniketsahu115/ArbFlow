@@ -4,7 +4,7 @@
 
 <img src="./client/public/logos/arbitrum-logomark.svg" alt="ArbFlow Logo" width="120" height="120">
 
-ArbFlow is a revolutionary DeFi AI-Agent platform built on Arbitrum
+ArbFlow is a AI-Agent DApp built on Arbitrum Orbit leveraging **Skynet Protocol** and **Li.Fi Bridge & DEX Aggregation Protocol**
 
 ## Smart DeFi Automation
 
