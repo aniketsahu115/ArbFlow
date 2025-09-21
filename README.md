@@ -8,13 +8,6 @@ ArbFlow is a revolutionary DeFi AI-Agent platform built on Arbitrum
 
 ## Smart DeFi Automation
 
-[![Built with](https://img.shields.io/badge/Built%20with-React%20%2B%20TypeScript-blue)](https://reactjs.org/)
-[![AI Powered](https://img.shields.io/badge/AI%20Powered-OpenAI%20%2B%20Custom%20ML-green)](https://documentation.skynet.io/skynet/skynet-protocol)
-[![Network](https://img.shields.io/badge/Network-Arbitrum-orange)](https://arbitrum.io/)
-[![License](https://img.shields.io/badge/License-MIT-green)](./LICENSE)
-
-[Live Demo](https://arbflow.vercel.app/) | [Documentation](./documentation) | [Community](./community)
-
 </div>
 
 ## Table of Contents
