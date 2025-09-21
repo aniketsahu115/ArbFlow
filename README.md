@@ -1,15 +1,10 @@
-# ArbFlow - Next-Generation AI-Powered DeFi Arbitrage Platform
+# ArbFlow - Next-Generation AI-Powered DeFi Agent
 
 <div align="center">
 
 <img src="./client/public/logos/arbitrum-logomark.svg" alt="ArbFlow Logo" width="120" height="120">
 
-ArbFlow is a revolutionary AI-powered DeFi arbitrage automation platform built on Arbitrum, leveraging advanced algor| **Uniswap V3** | Active | $500M+ | 200+ |
-| **SushiSwap** | Active | $100M+ | 150+ |
-| **Balancer** | Active | $50M+ | 100+ |
-| **Curve** | Active | $200M+ | 50+ |
-| **Camelot** | Planned | $80M+ | 80+ |
-| **GMX** | Planned | $300M+ | 20+ |and real-time market analysis to democratize access to profitable arbitrage opportunities across decentralized exchanges.
+ArbFlow is a revolutionary DeFi AI-Agent platform built on Arbitrum
 
 ## Smart DeFi Automation
 
@@ -37,9 +32,7 @@ ArbFlow is a revolutionary AI-powered DeFi arbitrage automation platform built o
 
 ## Overview
 
-ArbFlow demonstrates the transformative potential of **AI-driven DeFi automation** by creating an intelligent, accessible platform for arbitrage trading. By leveraging advanced machine learning algorithms, real-time market analysis, and seamless blockchain integration, ArbFlow bridges traditional trading complexity with next-generation automated strategies.
-
-### Mission Statement
+ArbFlow demonstrates the transformative potential of **AI-driven DeFi automation** by creating an intelligent, accessible platform. By leveraging advanced machine learning algorithms, real-time market analysis, and seamless blockchain integration, ArbFlow bridges traditional DeFi complexity with next-generation automated strategies.
 
 To democratize access to DeFi arbitrage opportunities globally by creating an intelligent, transparent, and efficient platform where users can leverage AI-powered strategies to maximize returns while maintaining full custody of their assets on the **Arbitrum Ecosystem**.
 
@@ -320,16 +313,6 @@ npm run build
 
 # Start production server
 npm run start
-```
-
-### Docker Deployment
-
-```bash
-# Build Docker image
-docker build -t arbflow .
-
-# Run with Docker Compose
-docker-compose up -d
 ```
 
 ### Environment Deployment
