@@ -13,14 +13,14 @@ ArbFlow is a AI-Agent DApp built on Arbitrum Orbit leveraging **Skynet Protocol*
 ## Table of Contents
 
 - [Overview](#overview)
+- [Architecture](#technical-architecture)
 - [Key Features](#key-features)
-- [Architecture](#architecture)
-- [Technology Stack](#technology-stack)
-- [Quick Start](#quick-start)
+- [Integrations and Protocols](#Integrations-and-Protocols)
 - [Documentation](#documentation)
 - [Testing](#testing)
 - [Deployment](#deployment)
 - [Contributing](#contributing)
+- [Future Plans](#Future-ArbFlow-Vision)
 - [License](#license)
 
 ## Overview
@@ -28,6 +28,36 @@ ArbFlow is a AI-Agent DApp built on Arbitrum Orbit leveraging **Skynet Protocol*
 ArbFlow demonstrates the transformative potential of AI-driven DeFi automation by creating an intelligent, accessible platform. By leveraging advanced natural language processing, machine learning, real-time market analysis, and decentralized infrastructure, ArbFlow bridges DeFi complexity with user-sovereign automation.
 
 The purpose is to democratize access to DeFi activities such as liquid staking, swaps, bridging, yield optimization, rebalancing, and token research. ArbFlow empowers users to interact with DeFi using simple NLP commands while maintaining verifiability, transparency, and full custody of their assets on the Arbitrum Ecosystem.
+
+## Technical Architecture
+
+ArbFlow follows a modern microservices architecture with clear separation of concerns across frontend, backend, AI services, and blockchain layers.
+
+```mermaid
+sequenceDiagram
+    participant U as User
+    participant F as Frontend
+    participant AI as AI Agent Core
+    participant S as Skynet
+    participant Arb as Arbitrum
+    
+    U->>+F: Enter command ("Swap 1 ETH...")
+    F->>+AI: Send command to Intent Engine
+    AI->>AI: Parse intent
+    AI->>+S: Query user preferences
+    S-->>-AI: Return preferences
+    AI->>+S: Fetch risk tolerance
+    S-->>-AI: Return risk settings
+    AI->>+AI: Simulate transaction
+    AI-->>-F: Display proposal
+    U->>+F: Approve transaction
+    F->>+Arb: Submit transaction
+    Arb->>-F: Confirm execution
+    F->>+S: Record history
+    S-->>-F: Confirm storage
+    F-->>-U: Show completion    
+```
+
 
 ## Integrations and Protocols -
 ArbFlow integrates with powerful decentralized infrastructure and liquidity protocols to ensure secure, efficient, and scalable automation across DeFi:
@@ -65,36 +95,6 @@ ArbFlow integrates with powerful decentralized infrastructure and liquidity prot
 - **WebSocket Integration**: Real-time price feeds and instant notifications
 - **Advanced Analytics**: Comprehensive reporting and performance metrics
 - **Security First**: Audited smart contracts and secure wallet integration
-
-
-## Architecture
-
-ArbFlow follows a modern microservices architecture with clear separation of concerns across frontend, backend, AI services, and blockchain layers.
-
-```mermaid
-sequenceDiagram
-    participant U as User
-    participant F as Frontend
-    participant AI as AI Agent Core
-    participant S as Skynet
-    participant Arb as Arbitrum
-    
-    U->>+F: Enter command ("Swap 1 ETH...")
-    F->>+AI: Send command to Intent Engine
-    AI->>AI: Parse intent
-    AI->>+S: Query user preferences
-    S-->>-AI: Return preferences
-    AI->>+S: Fetch risk tolerance
-    S-->>-AI: Return risk settings
-    AI->>+AI: Simulate transaction
-    AI-->>-F: Display proposal
-    U->>+F: Approve transaction
-    F->>+Arb: Submit transaction
-    Arb->>-F: Confirm execution
-    F->>+S: Record history
-    S-->>-F: Confirm storage
-    F-->>-U: Show completion    
-```
 
 ### Core Workflows
 
