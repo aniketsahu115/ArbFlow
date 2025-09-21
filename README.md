@@ -75,7 +75,8 @@ To democratize access to DeFi arbitrage opportunities globally by creating an in
 
 ArbFlow follows a modern microservices architecture with clear separation of concerns across frontend, backend, AI services, and blockchain layers.
 
-```sequenceDiagram
+```mermaid
+sequenceDiagram
     participant U as User
     participant F as Frontend
     participant AI as AI Agent Core
